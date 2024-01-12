@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style3.css">
+    <script>
+        $(document).ready(function(){
+    $("#nao").mouseenter(function(fast){
+        var windowWidth = $(window).width();
+        var windowHeight = $(window).height();
+        var buttonWidth = $(this).outerWidth();
+        var buttonHeight = $(this).outerHeight();
+        var randomPositionX = Math.floor(Math.random() * (windowWidth - buttonWidth));
+        var randomPositionY = Math.floor(Math.random() * (windowHeight - buttonHeight));
+        $("#nao").animate({left: randomPositionX + 'px', top: randomPositionY + 'px'});
+    });
+});
+$(document).ready(function(){
+ $("#btnsim").hover(function(){
+    $(this).css();
+ }, function(){
+    $(this).css("background-image", "");
+ });
+});
+
+
+    </script>
+</head>
+<body>
+    
+   <h1> Você quer se tornar um torcedor do São Paulo?</h1>
+    <div class="btns">
+        
+        <div id="sim">
+            <a href="index2.html">
+                <button id="btnsim">Sim</button>
+            </a>    
+        </div>
+
+        <div id="nao">
+            <button id="btnnao">Não</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

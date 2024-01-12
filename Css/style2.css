@@ -1,0 +1,48 @@
+body{
+    background: linear-gradient(to right, red, black, white);
+}
+form{
+    background-position: center;
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 25px;background-color: #ffffff99;
+}
+label.username{
+    display: inline-block;
+    width: 140px;
+}
+label.email{
+    display: inline-block;
+    width: 140px;
+}
+input[type="date"]{
+    display: inline-block;
+    width: 171px;
+}
+label[class="senha"]{
+    display: inline-block;
+    width: 130px;
+}
+label[class="confirmar"]{
+    display: inline-block;
+    width: 130px;
+}
+fieldset{
+    text-align: center;
+    border-radius: 25px;
+}
+img{
+    align-self: left;
+    margin-right: 0px;
+    width: 300px;
+    height: 300px;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
